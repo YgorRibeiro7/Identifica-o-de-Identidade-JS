@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verificar de Idade</title>
+</head>
+<link rel="stylesheet" href="estilo.css">
+    
+<body>
+    <header>
+        <h2>Verificador de Idade</h2>
+    </header>
+    <section id="container">
+      <div class="cont">
+         Ano de Nascimento: <input type="number" name="text"  id="text"><br><br>
+      
+         Sexo: <input type="radio" name="radsex" id="Masculino" checked> Masculino<!--O CHECKED serve já pra deixar marcado o  item -->
+               <input type="radio" name="radsex" id="Femenino" > Femenino<!--NAME tem que ter o mesmo nome para selecionar ou Masculino ou Femenino-->
+               <br><br>
+               <input type="button" value="Verificar" onclick="verificar()">
+       </div>
+       <form id="class-table">
+
+       <button class="class-button Clear"onclick="removeLinha()">Limpar</button>
+       </form>
+   <hr>
+        <div id="res">
+            Preencha os  dados acima  para ver o resultado!
+
+        </div>
+        
+        <!--- <img  src="./img/foto senhoraas.jpeg" alt="fotos de pessoas" >-->
+   </section>
+   <footer> &copy; CursoemVideo</footer>
+    <script src="script.js"></script>
+   
+</body>
+</html>
